@@ -7,13 +7,13 @@ const Counter = () => {
     const dispatch = useDispatch()
 
     return (
-        <div>
+        <div className='mt-10'>
             <div className='flex gap-5'>
                 <button className='p-4 bg-green-400 text-white rounded-md' onClick={()=>dispatch(increment())}>Increment</button>
                 <button className='p-4 bg-red-400 text-white rounded-md' onClick={()=>dispatch(decrement())}>Decrement</button>
                 <button className='p-4 bg-blue-400 text-white rounded-md' onClick={()=>dispatch(incrementByAmount(5))}>Increment By Value</button>
             </div>
-            <span className='text-xl'>{count}</span>
+            <span className='text-xl text-center'>{count}</span>
         </div>
     );
 };
